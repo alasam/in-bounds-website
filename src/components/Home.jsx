@@ -1,27 +1,22 @@
 import React from "react";
-import { highlightVid } from "../assets/inbounds highlight video.mp4";
+import video from "../assets/highlight.mp4";
 
 function Home() {
   return (
-    <div className="w-full h-screen bg-opacity-50">
-      <div class="relative z-30 p-5 text-2xl text-white bg-purple-300 bg-opacity-50 rounded-xl">
-        Welcome to my site!
+    // Page
+    <div className="w-full h-screen bg-black flex-col">
+      {/* Container */}
+
+      <div className="flex flex-row items-center place-content-center gap-0 w-full h-screen">
+        <div className="w-max">
+          <p className="text-white text-center text-2xl">BLAH</p>
+        </div>
+        <div className="w-max">
+          <p className="text-white text-center text-2xl w-fit">
+            BLAHasdsadsadas
+          </p>
+        </div>
       </div>
-      <highlightVid />
-      <video
-        controls
-        muted
-        autoPlay={"autoplay"}
-        loop
-        class="absolute z-10 w-auto min-w-full min-h-full max-w-none"
-      >
-        <source
-          src="https://github.com/alasam/in-bounds-website/blob/main/src/assets/inbounds%20highlight%20video.mp4"
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-      </video>
-      <script>document.getElementById('vid').play();</script>
     </div>
   );
 }
