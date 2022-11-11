@@ -2,14 +2,32 @@ import React, { useState } from "react";
 import { BiLeftArrow, BiRightArrow } from "react-icons/bi";
 
 function ImageSlider({ slides }) {
-  const [currentIndex, setCurrentUser] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const goBack = () => {
+    const isFirstSlide = currentIndex === 0;
+    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
+  };
+
+  const goNext = () => {
+    const isLastSlide = currentIndex === slides.length - 1;
+    const newIndex = isLastSlide ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+  };
 
   return (
     <div className="h-[100%] relative">
-      <div className="absolute top-[50%] left-[32px] text-[45px] text-[#fff] z-1 cursor-pointer translate-y-[-50%]">
+      <div
+        onClick={goBack}
+        className="absolute top-[50%] left-[32px] text-[45px] text-[#fff] z-1 cursor-pointer translate-y-[-50%]"
+      >
         <BiLeftArrow />
       </div>
-      <div className="absolute top-[50%] right-[32px] text-[45px] text-[#fff] z-1 cursor-pointer translate-y-[-50%]">
+      <div
+        onClick={goNext}
+        className="absolute top-[50%] right-[32px] text-[45px] text-[#fff] z-1 cursor-pointer translate-y-[-50%]"
+      >
         <BiRightArrow />
       </div>
       <div
