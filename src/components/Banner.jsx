@@ -13,7 +13,9 @@ function Banner() {
           <GiBasketballBasket size="150px" />
           INBOUNDS MINISTRIES
         </h1>
-        <p className="text-white text-4xl">Young Adults Basketball Ministry</p>
+        <p className="text-white text-4xl py-[-30px]">
+          Young Adults Basketball Ministry
+        </p>
         <p className="text-white text-4xl">Bramalea Baptist Church</p>
       </div>
     </div>
