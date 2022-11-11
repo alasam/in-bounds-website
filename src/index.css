@@ -35,3 +35,42 @@ video {
   justify-content: center;
   align-items: center;
 }
+
+#shake {
+  animation: glitch 3s ease-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translateX(0);
+    text-shadow: 0.1em 0 0 #0227f5, -0.05em 0 0 #4affff, -0.1em 0 0 #ff0825,
+      0.15em 0 0 #fffb19;
+  }
+  4% {
+    transform: translateX(-0.1em);
+    text-shadow: -0.1em 0 0 #0227f5, 0.15em 0 0 #4affff, 0.1em 0 0 #ff0825,
+      -0.2em 0 0 #fffb19;
+  }
+  8% {
+    transform: translateX(0.05em);
+    text-shadow: 0.2em 0 0 #0227f5, -0.13em 0 0 #4affff, -0.16em 0 0 #ff0825,
+      0.11em 0 0 #fffb19;
+  }
+  12% {
+    transform: translateX(-0.1em);
+    text-shadow: -0.13em 0 0 #0227f5, 0.05em 0 0 #4affff, 0.03em 0 0 #ff0825,
+      -0.03em 0 0 #fffb19;
+  }
+  16% {
+    transform: translateX(0.05em);
+    text-shadow: 0.1em 0 0 #0227f5, -0.09em 0 0 #4affff, -0.13em 0 0 #ff0825,
+      0.02em 0 0 #fffb19;
+  }
+  20% {
+    transform: translateX(0em);
+    text-shadow: 0 0 0 #0227f5, 0 0 0 #4affff, 0 0 0 #ff0825, 0 0 0 #fffb19;
+  }
+  100% {
+  }
+}

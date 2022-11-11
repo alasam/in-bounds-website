@@ -9,11 +9,14 @@ function Banner() {
       {" "}
       <video src={highlight} autoPlay loop muted />
       <div className="content">
-        <h1 className="text-white text-8xl underline decoration-blue-500 py-1 flex flex-nowrap">
+        <h1
+          id="shake"
+          className="text-white text-8xl underline decoration-blue-500 py-1 flex flex-nowrap"
+        >
           <GiBasketballBasket size="150px" />
           INBOUNDS MINISTRIES
         </h1>
-        <p className="text-white text-4xl py-[-30px]">
+        <p className="text-white text-4xl m">
           Young Adults Basketball Ministry
         </p>
         <p className="text-white text-4xl">Bramalea Baptist Church</p>

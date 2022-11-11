@@ -1,5 +1,6 @@
 import React from "react";
 import video from "../assets/highlight.mp4";
+import ImageSlider from "./ImageSlider";
 
 function Home() {
   const slides = [
@@ -13,7 +14,9 @@ function Home() {
     <div className="w-full h-screen bg-black text-white flex-col">
       {/* Container */}
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full text-2xl">
-        <div>{/* image slides here eventually */}</div>
+        <div className="w-[500px] h-[280px] m-auto ">
+          <ImageSlider slides={slides} />
+        </div>
         <div>
           <p>
             {" "}
