@@ -1,12 +1,15 @@
 import React from "react";
+import banner from "../assets/banner.PNG";
+import court from "../assets/court.jpg";
 import video from "../assets/highlight.mp4";
+import slide1 from "../assets/slide1.jpeg";
 import ImageSlider from "./ImageSlider";
 
 function Home() {
   const slides = [
-    { slide: {}, title: "Slide1" },
-    { slide: {}, title: "Slide2" },
-    { slide: {}, title: "Slide3" },
+    { url: court, title: "Slide1" },
+    { url: slide1, title: "Slide2" },
+    { url: banner, title: "Slide3" },
   ];
 
   return (
