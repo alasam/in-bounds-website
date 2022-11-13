@@ -41,6 +41,10 @@ video {
   animation-iteration-count: infinite;
 }
 
+img {
+  object-fit: scale-down;
+}
+
 @keyframes glitch {
   0% {
     transform: translateX(0);

@@ -7,11 +7,11 @@ function Home() {
     // Page
     <div className="w-full h-screen bg-black text-white flex-col">
       {/* Container */}
-      <div className="max-w-screen-lg mx-auto flex flex-auto justify-evenly h-full text-2xl">
-        <div className="w-[1600px] h-[400px] m-auto ">
+      <div className="w-screen mx-auto flex flex-auto justify-evenly items-center h-full text-2xl pt-20 px-10">
+        <div className="w-[2300px] h-[500px] ">
           <ImageSlider slides={SlideData} />
         </div>
-        <div className="w-auto">
+        <div className="w-auto p-3">
           <p>
             {" "}
             A glimpse at our newest young adult sport ministry, In Bounds
