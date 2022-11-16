@@ -1,5 +1,5 @@
 import Banner from "./components/Banner";
-import Calendar from "./components/Calendar";
+import GoogleCalendar from "./components/GoogleCalendar";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 
@@ -9,7 +9,7 @@ function App() {
       <Navbar />
       <Banner />
       <Home />
-      <Calendar />
+      <GoogleCalendar />
     </div>
   );
 }
